@@ -25,6 +25,12 @@ export const add = (value) => {
 };
 
 export const subtract = (value) => {
+  return dispatch => {
+      setTimeout( () => {
+
+      }, 2000 );
+  }
+  
   return {
       type: SUBTRACT,
       val: value
